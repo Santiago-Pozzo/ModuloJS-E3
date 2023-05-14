@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato&family=Open+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +9,11 @@
     text-decoration: none;
   }
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato&family=Open+Sans&display=swap');
-
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  } 
 
 /* Paleta de colores */
   :root {
@@ -56,15 +61,36 @@ main {
 
 .main__title {
     font-family: Bangers;
+    font-size: 40px;
+    font-weight: 180;
     color: var(--green-pineaple);
 } 
 
 .main__slogan {
     margin-top: 10px;
     font-family: lato;
+    font-size: 25px;
+    font-weight: 400;
     color: var(--brunt-red);
+    margin-bottom: 20px;
 }
 
+.divisor {
+    width: 100vw;
+    height: 6px;
+}
+
+.green {
+    background-color: var(--green-pineaple);
+}
+
+.ched {
+    background-color: var(--shredded-chedar);
+}
+
+.red {
+    background-color: var(--brunt-red);
+}
 .main__container {
     width: 80%;
     margin-top: 20px;
@@ -79,41 +105,47 @@ main {
 }
 
 .container__title {
-    /* font-family: ; */
+    font-family:lato;
+    font-size: 22px;
+    font-weight: 100;
     color: var(--tagerine);
 }
 
 .container__text {
-   /* font-family: ; */
+   font-family: open sans;
+   font-weight: 100;
+   font-size: 15px;
    color: var(--eggshel-paper); 
 }
 
 
 .formPizza {
-    width: 90%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 10px;
 }
 
-/* .form__field {
-    border: solid 2px;
-    border-color: var(--tagerine);
+#input {
+    width: 2rem;
+    height: 25px;
+    border-radius: solid 3px;
+    border-color: var(--eggshel-paper);
     border-radius: 5px;
-    width: 4rem;
-} */
+    text-align: center;
+}
 
-/* .form__inputBox {
-    background-color: var(--eggshel-paper);
-    border: solid 10px;
-    border-radius: 2px;
-    width: 5rem;
-} */
 
 .form__submitBtn {
     background-color: var(--shredded-chedar);
     border-radius: 5px;
     padding: 3px;
+    height: 28px;
+    font-family: bangers;
+    font-weight: 100;
+    font-size: 18;
 }
+
 
 .resultBox {
     margin-top: 15px;
@@ -127,10 +159,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 .pizzaCard__title {
+    color: var(--tagerine);
+    font-family:lato;
+    font-size: 22px;
+    font-weight: 100;
     color: var(--tagerine);
 }
 
@@ -146,16 +182,23 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .info__description {
     text-align: center;
-    color: var(--eggshel-paper);
+    font-family: open sans;
+   font-weight: 100;
+   font-size: 15px;
+   color: var(--eggshel-paper);
 }
 
 .info__price {
     text-align: center;
-    color: var(--eggshel-paper);
+    font-family: lato;
+   font-weight: 600;
+   font-size: 20px;
+   color: var(--tagerine);
 }
 
 .errorBox {
