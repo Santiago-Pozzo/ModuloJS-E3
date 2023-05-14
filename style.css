@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato&family=Open+Sans&display=swap');
+
+
+/* Paleta de colores */
+  :root {
+    --brunt-red: #a01005;
+    --tagerine: #eebf79;
+    --green-pineaple: #2F4B0E;
+    --eggshel-paper: #F4DCAE;
+    --shredded-chedar: #F99F24;
+ }
+
+ body {
+    background: var(--tagerine);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ /*Header  */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: var(--brunt-red);
+    height: 80px;
+}
+
+.header_logo {
+    height: 80%;
+    /* background: var(--eggshel-paper); */
+}
+
+
+/* Main */
+main {
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.main__title {
+    font-family: Bangers;
+    color: var(--green-pineaple);
+} 
+
+.main__slogan {
+    margin-top: 10px;
+    font-family: lato;
+    color: var(--brunt-red);
+}
+
+.main__container {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-pineaple);
+    border-radius: 1rem;
+    padding: 15px;
+    gap: 10px;
+}
+
+.container__title {
+    /* font-family: ; */
+    color: var(--tagerine);
+}
+
+.container__text {
+   /* font-family: ; */
+   color: var(--eggshel-paper); 
+}
+
+
+.formPizza {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .form__field {
+    border: solid 2px;
+    border-color: var(--tagerine);
+    border-radius: 5px;
+    width: 4rem;
+} */
+
+/* .form__inputBox {
+    background-color: var(--eggshel-paper);
+    border: solid 10px;
+    border-radius: 2px;
+    width: 5rem;
+} */
+
+.form__submitBtn {
+    background-color: var(--shredded-chedar);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.resultBox {
+    margin-top: 15px;
+    width: 80%;
+}
+
+.pizzaCard {
+    background: var(--brunt-red);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pizzaCard__title {
+    color: var(--tagerine);
+}
+
+.pizzaCard__img {
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.pizzacard__info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__description {
+    text-align: center;
+    color: var(--eggshel-paper);
+}
+
+.info__price {
+    text-align: center;
+    color: var(--eggshel-paper);
+}
+
+.errorBox {
+    background: var(--shredded-chedar);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.errorBox__title {
+    text-align: center;
+    color: var(--brunt-red);
+}
+
+.errorBox__message {
+    text-align: center;
+    color: var(--green-pineaple);
+}
+
+/* Footer */
+/* footer {
+    margin-top: auto;
+    width: 100%;
+    background: var(--brunt-red);
+    height: 80px;
+} */
+
+.hiden {
+    display: none;
+}
