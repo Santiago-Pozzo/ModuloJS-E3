@@ -1,0 +1,92 @@
+
+/* TABLET */
+@media (min-width: 768px) {
+    header {
+     height: 100px;
+    }
+
+    .main__title {
+        font-size: 60px;
+        font-weight: 300;
+        color: var(--green-pineaple);
+    } 
+
+    .main__slogan {
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .divisor {
+        height: 8px;
+    }
+
+    .container__title {
+        font-size: 35px;
+        font-weight: 200;
+    }
+
+    .container__text {
+        font-weight: 200;
+        font-size: 22px;
+     }
+
+     #input {
+        height: 35px;
+        width: 3rem;
+        border-radius: solid 5px;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+
+    .form__submitBtn {
+        height: 35px;
+        border-radius: 8px;
+        padding: 5px;
+        font-weight: 100;
+        font-size: 25;
+    }
+
+    .pizzaCard__title {
+        font-size: 35px;
+        font-weight: 200;
+    }
+
+    .info__description {
+       font-weight: 200;
+       font-size: 25px;
+    }
+    
+    .info__price {
+       font-weight: 600;
+       font-size: 30px;
+    }
+
+    .errorBox__title {
+        font-size: 30px;
+    }
+    
+    .errorBox__message {
+        font-size: 20px;
+    }
+
+    .resultBox {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+
+
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    .pizzaCard__title {
+        font-size: 45px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+}

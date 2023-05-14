@@ -23,7 +23,7 @@
     --eggshel-paper: #F4DCAE;
     --shredded-chedar: #F99F24;
  }
-
+/* ---------------ESTILOS (movile fisrts) ----------------------------*/
  body {
     background: var(--tagerine);
     display: flex;
@@ -75,6 +75,7 @@ main {
     margin-bottom: 20px;
 }
 
+
 .divisor {
     width: 100vw;
     height: 6px;
@@ -91,6 +92,9 @@ main {
 .red {
     background-color: var(--brunt-red);
 }
+
+
+
 .main__container {
     width: 80%;
     margin-top: 20px;
@@ -132,6 +136,7 @@ main {
     border-radius: solid 3px;
     border-color: var(--eggshel-paper);
     border-radius: 5px;
+    text-justify: auto;
     text-align: center;
 }
 
@@ -221,14 +226,7 @@ main {
     color: var(--green-pineaple);
 }
 
-/* Footer */
-/* footer {
-    margin-top: auto;
-    width: 100%;
-    background: var(--brunt-red);
-    height: 80px;
-} */
-
+/* Clase hiden */
 .hiden {
     display: none;
 }
