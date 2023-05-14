@@ -115,6 +115,13 @@ main {
     color: var(--tagerine);
 }
 
+.variedades {
+    font-family:lato;
+    font-size: 15px;
+    font-weight: 50;
+    color: var(--tagerine);
+}
+
 .container__text {
    font-family: open sans;
    font-weight: 100;

@@ -77,7 +77,7 @@ const boxCard = document.querySelector(".resultBox");
       let i = input - 1;
       boxCard.innerHTML = `
         <div class="pizzaCard">
-          <h3 class="pizzaCard__title">${pizzas[i].nombre}</h3>
+          <h3 class="pizzaCard__title"> <span>#${pizzas[i].id}</span> ${pizzas[i].nombre}</h3>
           <img src="${pizzas[i].imagen}" alt="imagen de la ${pizzas[i].nombre}" class="pizzaCard__img">
           
           <div class="pizzacard__info">
@@ -101,7 +101,7 @@ const boxCard = document.querySelector(".resultBox");
             document.querySelector(".pizzaCard").classList.add("hiden");
         }
       }
-
+      //Renderizar desde el local storage
       const renderLastValue = () => {
         let id = localStorage.getItem("lastPizzaID");
         if(id !== undefined) {
@@ -111,10 +111,18 @@ const boxCard = document.querySelector(".resultBox");
         }
       }
 
+      //Actualizar numero de variedades
+      const variedades = () => {
+        document.querySelector(".variedades").innerHTML = `
+          Actualmente tenemos ${pizzas.length} variedades para que disfrutes!
+        `
+      }
+
 
 //-----------------Init----------------------------------
 function init() {
   document.addEventListener("DOMContentLoaded", renderLastValue);
+  document.addEventListener("DOMContentLoaded", variedades);
   form.addEventListener("submit", getValue);
 } 
 

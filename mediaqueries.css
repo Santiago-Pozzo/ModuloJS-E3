@@ -31,6 +31,10 @@
         font-weight: 200;
     }
 
+    .variedades {
+        font-size: 20px;
+    }
+
     .container__text {
         font-weight: 200;
         font-size: 22px;
@@ -102,6 +106,10 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
+    .variedades {
+        font-size: 22px;
+    }
+
     .pizzaCard__title {
         font-size: 45px;
         font-weight: 300;
