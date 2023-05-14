@@ -45,7 +45,6 @@ header {
 
 .header_logo {
     height: 80%;
-    /* background: var(--eggshel-paper); */
 }
 
 
@@ -97,6 +96,7 @@ main {
 
 .main__container {
     width: 80%;
+    max-width: 300px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -155,6 +155,7 @@ main {
 .resultBox {
     margin-top: 15px;
     width: 80%;
+    max-width: 300px
 }
 
 .pizzaCard {
@@ -173,12 +174,15 @@ main {
     font-size: 22px;
     font-weight: 100;
     color: var(--tagerine);
+    grid-area: tit;
 }
 
 .pizzaCard__img {
     margin-top: 10px;
     width: 70%;
     border-radius: 10px;
+    grid-area: img;
+    max-width: 200px;
 }
 
 .pizzacard__info {
@@ -188,6 +192,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    grid-area: info;
 }
 
 .info__description {

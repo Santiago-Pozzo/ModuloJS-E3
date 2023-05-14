@@ -1,6 +1,10 @@
 
 /* TABLET */
 @media (min-width: 768px) {
+    .main__container {
+        max-width: 700px;
+    }
+
     header {
      height: 100px;
     }
@@ -48,19 +52,33 @@
         font-size: 25;
     }
 
+    .pizzaCard {
+       gap: 10px;
+      display: grid;
+      grid-template-areas: "tit tit tit tit tit"
+                            "img img img info info"
+                            "img img img info info"
+                            "img img img info info";
+    }
+
     .pizzaCard__title {
         font-size: 35px;
         font-weight: 200;
+        text-align: center;
+    }
+
+    .pizzaCard__img {
+        width: 100%;
     }
 
     .info__description {
        font-weight: 200;
-       font-size: 25px;
+       font-size: 20px;
     }
     
     .info__price {
        font-weight: 600;
-       font-size: 30px;
+       font-size: 25px;
     }
 
     .errorBox__title {
@@ -73,6 +91,7 @@
 
     .resultBox {
         margin-bottom: 50px;
+        max-width: 700px;
     }
 
 }
@@ -87,6 +106,28 @@
         font-size: 45px;
         font-weight: 300;
         margin-bottom: 20px;
+    }
+    .pizzaCard {
+        gap:15px;
+        display: grid;
+        grid-template-areas: "img img img tit tit"
+                              "img img img info info"
+                              "img img img info info"
+                              "img img img info info";
+      }
+
+    .info__description {
+        font-weight: 200;
+        font-size: 30px;
+     }
+
+     .info__price {
+        font-weight: 600;
+        font-size: 30px;
+     }
+
+     .pizzaCard__title {
+        margin-bottom:0 ;
     }
 
 }

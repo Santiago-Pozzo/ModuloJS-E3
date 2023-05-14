@@ -81,7 +81,7 @@ const boxCard = document.querySelector(".resultBox");
           <img src="${pizzas[i].imagen}" alt="imagen de la ${pizzas[i].nombre}" class="pizzaCard__img">
           
           <div class="pizzacard__info">
-            <p class="info__description">Los ingresientes de esta variedad son:</br> ${pizzas[i].ingredientes.join(", ")}.</p>
+            <p class="info__description">Ingredientes:</br> ${pizzas[i].ingredientes.join(", ")}.</p>
             <p class="info__price">Precio: $${pizzas[i].precio}</p>
           </div>
         </div>    
@@ -93,22 +93,34 @@ const boxCard = document.querySelector(".resultBox");
         e.preventDefault();
         inputNumber = document.querySelector("#input").value.trim();
         if (isValid(inputNumber)){
+            localStorage.setItem("lastPizzaID", inputNumber);
             generarCard(inputNumber);
-            document.querySelector(".errorBox").classList.add("hiden");
-            
+            document.querySelector(".errorBox").classList.add("hiden");                         
         } else {
             generarError();
             document.querySelector(".pizzaCard").classList.add("hiden");
         }
       }
 
+      const renderLastValue = () => {
+        let id = localStorage.getItem("lastPizzaID");
+        if(id !== undefined) {
+          generarCard(id);
+        } else {
+          
+        }
+      }
+
 
 //-----------------Init----------------------------------
 function init() {
+  document.addEventListener("DOMContentLoaded", renderLastValue);
   form.addEventListener("submit", getValue);
 } 
 
 init();
+
+
 
 
 
